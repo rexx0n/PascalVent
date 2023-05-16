@@ -1,0 +1,62 @@
+.main {
+  max-width: 516px;
+  h1 {
+    font-family: "Ruberoid";
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 74px;
+    color: #495e4c;
+    text-transform: capitalize;
+  }
+  hr {
+    width: 148px;
+    height: 3px;
+    background: #78c081;
+    border-radius: 1.5px;
+    border: none;
+  }
+  &__line {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+  .main__green {
+    color: #78c081;
+    text-transform: uppercase;
+  }
+  p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #7ca381;
+  }
+  &__eclipse {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__contacts {
+    margin-top: 52px;
+    margin-bottom: 78px;
+    display: flex;
+    gap: 73px;
+    span {
+      font-size: 16px;
+      line-height: 24px;
+      color: #7b897d;
+    }
+  }
+  &__address {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+  button {
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 32px 126px;
+    border-radius: 30px;
+    margin-bottom: 79px;
+  }
+}
