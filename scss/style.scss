@@ -1,0 +1,14 @@
+@import "./fonst/proxima.scss";
+@import "./fonst/ruberoid.scss";
+@import "bg";
+@import "header";
+@import "nav";
+@import "btn";
+@import "container";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Proxima Nova Cn Lt", sans-serif;
+  font-style: normal;
+}
