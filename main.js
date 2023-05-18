@@ -35,3 +35,15 @@ document.onscroll = function () {
 //     header.classList.add('header__scroll')
 //     main.classList.add('main--pt')
 // })
+
+
+//modal
+let modal = document.querySelector('.modal')
+let btnModal = document.querySelector('.header .btn')
+
+btnModal.addEventListener('click', ()=>{
+    modal.classList.remove('modal__none')
+})
+modal.querySelector('.btn').addEventListener('click', ()=> {
+    modal.classList.add('modal__none')
+})

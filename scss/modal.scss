@@ -1,0 +1,80 @@
+.modal {
+  background: rgba(217, 250, 221, 0.55);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  h1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  hr {
+    width: 136px;
+    height: 2px;
+    background: #78c081;
+    border-radius: 1.5px;
+    border: none;
+  }
+  button {
+    padding: 12px 14px;
+  }
+  &__none {
+    display: none;
+  }
+  &__box {
+    padding-top: 105px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    max-width: 445px;
+    margin: auto;
+  }
+  &__title {
+    padding: 35px 0 20px 35px;
+  }
+  &__info {
+    border-radius: 50px;
+    background: #d9fadd;
+    margin-top: 25px;
+  }
+  &__calls {
+    margin-top: 20px;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    gap: 15px;
+  }
+  &__text {
+    padding: 35px 35px 43px;
+    border-radius: 35px 35px 50px 50px;
+    background: #ffffff;
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #7ca381;
+    }
+  }
+  &__phone {
+    margin-top: 45px;
+    display: flex;
+    span {
+      &:first-child {
+        border-right: 1px solid #bee1c2;
+        border-radius: 0.5px;
+        padding-right: 21px;
+      }
+      svg {
+        margin-right: 15px;
+      }
+      margin-right: 15px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #7b897d;
+    }
+  }
+}
