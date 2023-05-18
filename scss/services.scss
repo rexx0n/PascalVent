@@ -1,5 +1,6 @@
 .services {
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
   &__title {
@@ -72,7 +73,7 @@
   }
   &__services {
     display: flex;
-    margin-right: -64px;
+    margin-right: -127px;
     align-items: center;
   }
   &__info {

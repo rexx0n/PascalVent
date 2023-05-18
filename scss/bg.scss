@@ -11,4 +11,10 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+  &__price {
+    background: url(../img/price.png);
+    background-repeat: no-repeat;
+    background-position-x: -2px;
+    background-position-y: 48px;
+  }
 }

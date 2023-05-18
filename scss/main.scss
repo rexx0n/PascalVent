@@ -1,5 +1,9 @@
 .main {
   max-width: 516px;
+  padding-top: 85px;
+  &--pt {
+    padding-top: 167px;
+  }
   h1 {
     font-family: "Ruberoid";
     font-weight: 600;
