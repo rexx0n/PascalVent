@@ -39,11 +39,22 @@ document.onscroll = function () {
 
 //modal
 let modal = document.querySelector('.modal')
-let btnModal = document.querySelector('.header .btn')
+let btnToModal = document.querySelector('.header .btn')
 
-btnModal.addEventListener('click', ()=>{
+btnToModal.addEventListener('click', ()=>{
     modal.classList.remove('modal__none')
 })
 modal.querySelector('.btn').addEventListener('click', ()=> {
     modal.classList.add('modal__none')
+})
+//second modal
+let modalSecond = document.querySelector('.modal__second')
+let btnToModalSecond = document.querySelector('.main > .btn')
+
+btnToModalSecond.addEventListener('click', ()=> {
+    modalSecond.classList.remove('modal__none')
+})
+
+modalSecond.querySelector('.btn').addEventListener('click', ()=> {
+    modalSecond.classList.add('modal__none')
 })
