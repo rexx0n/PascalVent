@@ -1,0 +1,53 @@
+.about {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__card {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+    border-radius: 50px;
+    max-width: 531px;
+    padding: 33px 45px;
+
+    span {
+      color: #78c081;
+      font-family: "Ruberoid";
+      font-size: 21px;
+      line-height: 28px;
+      text-decoration: underline;
+    }
+    p {
+      padding-top: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #848484;
+    }
+  }
+  &__experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 329px;
+    > div {
+      display: block;
+    }
+    h4 {
+      span {
+        font-size: 35px;
+        line-height: 47px;
+      }
+      font-family: "Ruberoid";
+      font-size: 26px;
+      line-height: 35.26px;
+      color: #78c081;
+    }
+    > span {
+      max-width: 198px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #7ca381;
+    }
+  }
+}
