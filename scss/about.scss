@@ -28,10 +28,18 @@
   &__experience {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     max-height: 329px;
+    gap: 93px;
+    justify-content: flex-end;
     > div {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      > span {
+        max-width: 198px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #7ca381;
+      }
     }
     h4 {
       span {
@@ -42,12 +50,6 @@
       font-size: 26px;
       line-height: 35.26px;
       color: #78c081;
-    }
-    > span {
-      max-width: 198px;
-      font-size: 16px;
-      line-height: 26px;
-      color: #7ca381;
     }
   }
 }
