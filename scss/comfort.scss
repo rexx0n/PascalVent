@@ -1,0 +1,15 @@
+.comfort {
+  margin-top: 100px;
+  display: flex;
+  &__info {
+    li {
+      font-size: 16px;
+      line-height: 19px;
+      color: #7ca381;
+      list-style-type: none;
+      &::before {
+        content: url(/img/marker_li.png);
+      }
+    }
+  }
+}
