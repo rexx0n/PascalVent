@@ -50,11 +50,14 @@ modal.querySelector('.btn').addEventListener('click', ()=> {
 //second modal
 let modalSecond = document.querySelector('.modal__second')
 let btnToModalSecond = document.querySelector('.main > .btn')
+let btnToModalSecond2 = document.querySelector('.comfort__info .btn')
 
 btnToModalSecond.addEventListener('click', ()=> {
     modalSecond.classList.remove('modal__none')
 })
-
+btnToModalSecond2.addEventListener('click', ()=> {
+    modalSecond.classList.remove('modal__none')
+})
 modalSecond.querySelector('.btn').addEventListener('click', ()=> {
     modalSecond.classList.add('modal__none')
 })
