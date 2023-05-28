@@ -1,0 +1,49 @@
+.schematic {
+  background-image: url(/img/schematic-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  > h2 {
+    text-align: center;
+    padding-top: 147px;
+    padding-bottom: 142px;
+  }
+  h2 {
+    font-family: "Ruberoid";
+    font-size: 35px;
+    line-height: 47px;
+    color: #78c081;
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #495e4c;
+  }
+  &__info {
+    padding-top: 100px;
+    h2 {
+      padding-bottom: 15px;
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+  &__column {
+    max-width: 496px;
+    div:first-child {
+      margin-bottom: 220px;
+    }
+    div:last-child {
+      margin-top: 172px;
+    }
+    &--right {
+      padding-top: 129px;
+      div:first-child {
+        margin-bottom: 233px;
+      }
+      div:last-child {
+        margin-top: 228px;
+      }
+      max-width: 625px;
+      text-align: right;
+    }
+  }
+}
