@@ -65,6 +65,8 @@ modalSecond.querySelector('.btn').addEventListener('click', ()=> {
 const images = document.querySelectorAll('.portfolio__img')
 const sliderLine = document.querySelector('.portfolio__line')
 const images2 = document.querySelectorAll('.portfolio__img > img')
+const btnLeft = document.querySelector('.portfolio__btn-left')
+const btnRight = document.querySelector('.portfolio__btn-right')
 let count = 0
 let width
 let translate = 0
@@ -107,6 +109,22 @@ document.querySelector('.portfolio__btn-right').addEventListener('click', ()=> {
 })
 
 function rollSlider() {
+    if(count > 0) {
+        btnLeft.querySelector('.portfolio__svg--active').classList.remove('portfolio__none')
+        btnLeft.querySelector('.portfolio__svg--not-active').classList.add('portfolio__none')
+    }
+    if (count === images.length -1) {
+        btnRight.querySelector('.portfolio__svg--active').classList.add('portfolio__none')
+        btnRight.querySelector('.portfolio__svg--not-active').classList.remove('portfolio__none')
+    }
+    else {
+          btnRight.querySelector('.portfolio__svg--active').classList.remove('portfolio__none')
+        btnRight.querySelector('.portfolio__svg--not-active').classList.add('portfolio__none')
+    }
+    if (count === 0) {
+       btnLeft.querySelector('.portfolio__svg--active').classList.add('portfolio__none')
+        btnLeft.querySelector('.portfolio__svg--not-active').classList.remove('portfolio__none')
+    }
     sliderLine.style.transform = 'translate(-'+translate+'px)'
    images2[count].style.width = 500 +'px' 
    images2[count].style.height = 456 + 'px'
