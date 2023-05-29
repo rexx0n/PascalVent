@@ -61,3 +61,53 @@ btnToModalSecond2.addEventListener('click', ()=> {
 modalSecond.querySelector('.btn').addEventListener('click', ()=> {
     modalSecond.classList.add('modal__none')
 })
+//slider
+const images = document.querySelectorAll('.portfolio__img')
+const sliderLine = document.querySelector('.portfolio__line')
+const images2 = document.querySelectorAll('.portfolio__img > img')
+let count = 0
+let width
+let translate = 0
+
+function init() {
+    console.log('rezise');
+    images2.forEach( item => {
+        item.style.width = width + 'px'
+    })
+    rollSlider()
+}
+window.addEventListener('resize', init)
+
+init()
+
+document.querySelector('.portfolio__btn-left').addEventListener('click', ()=> {
+    images2[count].style.width = 270 +'px' 
+    count--
+    if(count < 0) {
+        count = images.length -1
+        translate = translate - -888
+    }
+    else {
+        translate = translate + -296
+    }
+    rollSlider()
+})
+
+document.querySelector('.portfolio__btn-right').addEventListener('click', ()=> {
+       images2[count].style.width = 270 +'px' 
+    count++
+    if (count >= images.length) {
+        translate = 0
+        count = 0
+    }
+    else {
+        translate = translate - -296
+    }
+    rollSlider()
+})
+
+function rollSlider() {
+    sliderLine.style.transform = 'translate(-'+translate+'px)'
+   images2[count].style.width = 500 +'px' 
+   images2[count].style.height = 456 + 'px'
+}
