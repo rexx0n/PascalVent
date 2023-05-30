@@ -28,4 +28,10 @@
     background-repeat: no-repeat;
     background-position: right;
   }
+  &__clients {
+    background: url(/img/clients-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 104px;
+  }
 }

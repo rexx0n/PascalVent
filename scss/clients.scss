@@ -1,0 +1,59 @@
+.clients {
+  padding-top: 256px;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  display: flex;
+  > div:first-child {
+    max-width: 633px;
+  }
+  &__title {
+    h1:first-child {
+      display: flex;
+      gap: 35px;
+      align-items: center;
+      hr {
+        border: none;
+        background: #78c081;
+        width: 105px;
+        height: 2px;
+        border-radius: 1.5px;
+      }
+    }
+  }
+  &__line {
+    display: flex;
+    gap: 20px;
+    transition: ease 0.4s;
+  }
+  &__slider {
+    overflow: hidden;
+    max-width: 437px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #848484;
+  }
+  &__btns {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    button {
+      border: none;
+      background: none;
+    }
+  }
+  &__none {
+    display: none;
+  }
+  &__svg {
+    &--active {
+      box-shadow: 0px 0px 0px 6px #78c081;
+      border-radius: 24px;
+    }
+    &--not-active {
+      box-shadow: 0px 0px 0px 6px #ffffff;
+      border-radius: 24px;
+    }
+  }
+}

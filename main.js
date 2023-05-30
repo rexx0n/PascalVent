@@ -129,3 +129,58 @@ function rollSlider() {
    images2[count].style.width = 500 +'px' 
    images2[count].style.height = 456 + 'px'
 }
+
+//slider2
+const imagesClients = document.querySelectorAll('.clients__line > img')
+const sliderLineClients = document.querySelector('.clients__line')
+const btnLeftClients = document.querySelector('.clients__btn-left')
+const btnRightClients = document.querySelector('.clients__btn-right')
+let countClients = 0
+let translateClients = 0
+
+
+btnLeftClients.addEventListener('click', ()=> {
+    countClients--
+    if(countClients < 0) {
+        countClients = imagesClients.length -1
+        translateClients = translateClients - -870
+        console.log(imagesClients.length);
+    }
+    else {
+        translateClients = translateClients + -290
+    }
+    rollSliderCliennts()
+    console.log(countClients);
+})
+
+btnRightClients.addEventListener('click', ()=> {
+    countClients++
+    if (countClients >= imagesClients.length) {
+        translateClients = 0
+        countClients = 0
+    }
+    else {
+        translateClients = translateClients - -290
+    }
+    rollSliderCliennts()
+})
+
+function rollSliderCliennts() {
+    if(countClients > 0) {
+        btnLeftClients.querySelector('.clients__svg--active').classList.remove('clients__none')
+        btnLeftClients.querySelector('.clients__svg--not-active').classList.add('clients__none')
+    }
+    if (countClients === imagesClients.length -1) {
+        btnRightClients.querySelector('.clients__svg--active').classList.add('clients__none')
+        btnRightClients.querySelector('.clients__svg--not-active').classList.remove('clients__none')
+    }
+    else {
+          btnRightClients.querySelector('.clients__svg--active').classList.remove('clients__none')
+        btnRightClients.querySelector('.clients__svg--not-active').classList.add('clients__none')
+    }
+    if (countClients === 0) {
+       btnLeftClients.querySelector('.clients__svg--active').classList.add('clients__none')
+        btnLeftClients.querySelector('.clients__svg--not-active').classList.remove('clients__none')
+    }
+    sliderLineClients.style.transform = 'translate(-'+translateClients+'px)'
+}
