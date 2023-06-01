@@ -11,3 +11,8 @@
     text-transform: lowercase;
   }
 }
+@media screen and (max-width: 1440px) {
+  .nav {
+    display: none;
+  }
+}

@@ -35,3 +35,10 @@
     background-position-y: 104px;
   }
 }
+@media screen and (max-width: 1440px) {
+  .bg {
+    background-image: url(/img/flowers-mob.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}

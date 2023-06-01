@@ -2,3 +2,8 @@
   max-width: 1170px;
   margin: auto;
 }
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 339px;
+  }
+}

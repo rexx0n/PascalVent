@@ -41,9 +41,7 @@
   &__steps {
     margin-top: 66px;
     display: flex;
-    > svg {
-      margin-top: 29px;
-    }
+    justify-content: center;
   }
   &__step {
     display: flex;
