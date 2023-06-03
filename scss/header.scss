@@ -25,8 +25,15 @@
   }
 }
 @media screen and (max-width: 1440px) {
+  #none {
+    display: none;
+  }
   .header {
     justify-content: space-between;
+    padding: 22px 28px;
+    &__none {
+      display: none;
+    }
     &__logo {
       svg {
         max-width: 168px;

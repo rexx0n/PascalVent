@@ -195,3 +195,16 @@ function rollSliderCliennts() {
     }
     sliderLineClients.style.transform = 'translate(-'+translateClients+'px)'
 }
+//burger
+const burgerNotActive = document.querySelector('.header__burger-not-active')
+const burgerActive = document.querySelector('.header__burger-active')
+const burgerActiveBtn = burgerActive.querySelector('div')
+
+burgerNotActive.addEventListener('click', ()=> {
+    burgerNotActive.setAttribute('id', 'none')
+    burgerActive.removeAttribute('id','none')
+})
+burgerActiveBtn.addEventListener('click', ()=> {
+    burgerActive.setAttribute('id', 'none')
+    burgerNotActive.removeAttribute('id', 'none')
+})
