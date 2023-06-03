@@ -20,17 +20,28 @@ btnUp.addEventListener('click', ()=> {
 let header = document.querySelector('.header'),
     headerH = document.querySelector('.header').clientHeight
 let main = document.querySelector('.main')
-document.onscroll = function () {
-    let scroll = window.scrollY
-    if (scroll > headerH) {
-        header.classList.add('header__scroll')
-        main.classList.add('main--pt')
+window.addEventListener('resize', headerScroll)
+function headerScroll () {
+    if (window.innerWidth < 1440 ) {
+        return
     }
     else {
-        header.classList.remove('header__scroll')
-        main.classList.remove('main--pt')
+        document.onscroll = function () {
+        let scroll = window.scrollY
+            if (scroll > headerH) {
+                header.classList.add('header__scroll')
+                main.classList.add('main--pt')
+            }
+            else {
+                header.classList.remove('header__scroll')
+                main.classList.remove('main--pt')
+            }
+        }
     }
+    return
 }
+
+
 // header.addEventListener('focusout', ()=> {
 //     header.classList.add('header__scroll')
 //     main.classList.add('main--pt')
