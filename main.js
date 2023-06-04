@@ -23,10 +23,12 @@ let main = document.querySelector('.main')
 window.addEventListener('resize', headerScroll)
 function headerScroll () {
     if (window.innerWidth < 1440 ) {
+        document.removeEventListener()
         return
     }
     else {
         document.onscroll = function () {
+            console.log('sadasd');
         let scroll = window.scrollY
             if (scroll > headerH) {
                 header.classList.add('header__scroll')
@@ -202,9 +204,11 @@ const burgerActiveBtn = burgerActive.querySelector('div')
 
 burgerNotActive.addEventListener('click', ()=> {
     burgerNotActive.setAttribute('id', 'none')
+    main.classList.add('main--pt')
     burgerActive.removeAttribute('id','none')
 })
 burgerActiveBtn.addEventListener('click', ()=> {
     burgerActive.setAttribute('id', 'none')
+    main.classList.remove('main--pt')
     burgerNotActive.removeAttribute('id', 'none')
 })
