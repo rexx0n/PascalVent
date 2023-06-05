@@ -66,6 +66,24 @@
 }
 @media screen and (max-width: 1440px) {
   .main {
+    button {
+      padding: 20px 52px 17px 51px;
+      margin-bottom: 311px;
+    }
+    &__contacts {
+      gap: 36px;
+      span {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    hr {
+      max-width: 93px;
+    }
     &--pt {
       padding-top: 375px;
     }

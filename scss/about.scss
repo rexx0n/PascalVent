@@ -53,3 +53,23 @@
     }
   }
 }
+@media screen and (max-width: 1440px) {
+  .about {
+    padding-top: 70px;
+    flex-direction: column;
+    &__card {
+      padding: 35px 25px;
+    }
+    &__experience {
+      max-height: none;
+      padding-top: 32px;
+      justify-content: center;
+      gap: 20px;
+      > div {
+        > span {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

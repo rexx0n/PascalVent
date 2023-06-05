@@ -53,3 +53,15 @@
     color: #495e4c;
   }
 }
+@media screen and (max-width: 1440px) {
+  .steps {
+    gap: 45px;
+    flex-direction: column;
+    h1 {
+      gap: 15px;
+    }
+    hr {
+      max-width: 62px;
+    }
+  }
+}

@@ -17,17 +17,11 @@
 @import "portfolio";
 @import "clients";
 @import "footer";
+@import "h1";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Proxima Nova Cn Lt", sans-serif;
   font-style: normal;
-}
-h1 {
-  font-family: "Ruberoid";
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 60px;
-  color: #495e4c;
 }

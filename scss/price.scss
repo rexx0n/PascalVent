@@ -47,3 +47,27 @@
     }
   }
 }
+@media screen and (max-width: 1440px) {
+  .price {
+    &__products {
+      row-gap: 20px;
+    }
+    &__card {
+      box-shadow: 0px 0px 1px 0px #0000004a;
+      max-width: 152px;
+      img {
+        height: 131px;
+      }
+      span {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+    h1 {
+      gap: 0;
+    }
+    hr {
+      max-width: 106px;
+    }
+  }
+}

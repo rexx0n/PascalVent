@@ -33,3 +33,24 @@
     }
   }
 }
+@media screen and (max-width: 1440px) {
+  .baner {
+    padding: 35px 28px;
+    h1 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+    form {
+      flex-direction: column;
+      gap: 25px;
+      input {
+        width: 100%;
+        max-width: 319px;
+      }
+    }
+    .btn {
+      margin: 0;
+      padding: 19px 35px;
+    }
+  }
+}

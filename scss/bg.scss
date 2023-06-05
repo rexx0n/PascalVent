@@ -40,5 +40,13 @@
     background-image: url(/img/flowers-mob.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    &__price {
+      background-image: url(/img/bg__price-mobile.png);
+      background-position-x: 23px;
+      background-position-y: 185px;
+    }
+    &__comfort {
+      background: none;
+    }
   }
 }

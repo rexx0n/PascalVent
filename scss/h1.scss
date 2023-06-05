@@ -1,0 +1,13 @@
+h1 {
+  font-family: "Ruberoid";
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #495e4c;
+}
+@media screen and (max-width: 1440px) {
+  h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
