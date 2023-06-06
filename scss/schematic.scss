@@ -47,3 +47,43 @@
     }
   }
 }
+@media screen and (max-width: 1440px) {
+  .schematic {
+    background-image: none;
+    background-position-y: 146px;
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    > h2 {
+      padding-top: 30px;
+      padding-bottom: 110px;
+    }
+    &__column {
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      div:first-child {
+        margin-bottom: 0;
+      }
+      div:last-child {
+        margin-top: 0;
+      }
+      &--right {
+        div:first-child {
+          margin-bottom: 0;
+        }
+        div:last-child {
+          margin-top: 0;
+        }
+      }
+    }
+    &__info {
+      padding-top: 25px;
+      p {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+}

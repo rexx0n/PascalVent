@@ -28,7 +28,6 @@ function headerScroll () {
     }
     else {
         document.onscroll = function () {
-            console.log('sadasd');
         let scroll = window.scrollY
             if (scroll > headerH) {
                 header.classList.add('header__scroll')
@@ -139,8 +138,8 @@ function rollSlider() {
         btnLeft.querySelector('.portfolio__svg--not-active').classList.remove('portfolio__none')
     }
     sliderLine.style.transform = 'translate(-'+translate+'px)'
-   images2[count].style.width = 500 +'px' 
-   images2[count].style.height = 456 + 'px'
+   images2[count].style.width = 319 +'px' 
+   images2[count].style.height = 419 + 'px'
 }
 
 //slider2

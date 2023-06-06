@@ -110,7 +110,11 @@
       display: flex;
       flex-direction: column;
       border-radius: 50px;
+      .services__none--img {
+        display: block;
+      }
       img {
+        display: none;
         border-radius: 50px;
       }
       span {

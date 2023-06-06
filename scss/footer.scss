@@ -94,3 +94,15 @@ footer {
     }
   }
 }
+@media screen and (max-width: 1440px) {
+  .footer {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__info {
+      svg {
+        max-width: 212px;
+      }
+    }
+  }
+}
